@@ -3,7 +3,7 @@ var PLUGIN_INFO =
 <VimperatorPlugin>
   <name>Instapaper</name>
   <description>Add pages to instapaper for later reading</description>
-  <author mail="vimperator@mobocracy.net" homepage="http://mobocracy.net">Blake Matheny</author>
+  <author mail="petrushkin@yandex.ru" homepage="https://github.com/petRUShka/instapaper.js">petRUShka</author>
   <version>0.1</version>
   <license>GPL</license>
   <minVersion>1.2</minVersion>
@@ -33,7 +33,7 @@ Usage:
 		var password = logins[0].password;
 
 		if ( username === false ) {
-			dactyl.echo("Must set instapaper username. 'let g:instapaper_username = \"username\"' in .vimperratorrc");
+			dactyl.echo("Must set instapaper username and password. You should login on instapaper.com and then save login and password to Firefox password manager.");
 			return;
 		}
 		params.push('username=' + encodeURIComponent(username));
