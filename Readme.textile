@@ -1,0 +1,19 @@
+This is original vimperator "instapaper.js":http://code.google.com/p/vimperator-labs/issues/detail?id=112 adopted for pentadactyl with some changes
+
+* rl command works with some sites and add mobile versions to instapaper instead of full version:
+** livejournal.com
+** habrahabr.ru
+** www.trud.ru
+** lenta.ru
+** roem.ru
+** www.guardian.co.uk
+** news.rambler.ru
+* rl command gets login and password from Firefox Password Manager instead of plain text passwords in .pentadactylrc
+
+h1. Installing
+
+Put @instapaper.js@ into @~/.pentadactyl/plugin/@.
+
+h1. Setting up
+
+Then you should save your login and password in standart Firefox password manager on www.insapaper.com
