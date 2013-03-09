@@ -126,6 +126,9 @@ Usage:
 		  url = buffer_url.replace(/$/, "/print");
 		if(buffer_url.match("news.rambler.ru") && !buffer_url.match("m.rambler.ru"))
 		  url = buffer_url.replace(/news.rambler.ru\/(\d+)\/.+/, "m.rambler.ru/news/head/$1/");
+		// www.opennet.ru
+		if(buffer_url.match(/:\/\/www.opennet.ru/))
+		  url = buffer_url.replace(/www\./, "mobile.");
 		// TODO: http://www.vedomosti.ru/politics/news/1502544/kurator_pokoleniya
 		// TODO: ttp://www.vedomosti.ru/politics/print/2012/02/14/1502544
         return url;

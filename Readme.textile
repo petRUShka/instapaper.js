@@ -8,6 +8,7 @@ This is original vimperator "instapaper.js":http://code.google.com/p/vimperator-
 ** roem.ru
 ** www.guardian.co.uk
 ** news.rambler.ru
+** www.opennet.ru
 * rl command gets login and password from Firefox Password Manager instead of plain text passwords in .pentadactylrc
 
 h1. Installing
