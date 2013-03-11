@@ -120,7 +120,7 @@ Usage:
 		  url = buffer_url.replace(/\/?$/, "/_Printed.htm");
 	        // roem.ru
 		if(buffer_url.match(/:\/\/roem.ru/) && !buffer_url.match("reom.ru/pda"))
-		  url = buffer_url.replace(/\/(\?.*)?$/, "").replace(/\/\d{4}\/\d{2}\/\d{2}\/\D+(\d+)$/, "/pda/?element_id=$1");
+		  url = buffer_url.replace(/\/(\?.*)?$/, "").replace(/\/\d{4}\/\d{2}\/\d{2}\/\D+(\d+)$/, "/pda/detail.php?ID=$1");
 		// www.guardian.co.uk
 		if(buffer_url.match(/guardian.co.uk\//) && !buffer_url.match("print"))
 		  url = buffer_url.replace(/$/, "/print");
