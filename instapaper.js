@@ -1,25 +1,23 @@
-// PLUGIN_INFO//{{{
-var PLUGIN_INFO =
-<VimperatorPlugin>
-  <name>Instapaper</name>
-  <description>Add pages to instapaper for later reading</description>
-  <author mail="petrushkin@yandex.ru" homepage="https://github.com/petRUShka/instapaper.js">petRUShka</author>
-  <version>0.1</version>
-  <license>GPL</license>
-  <minVersion>1.2</minVersion>
-  <maxVersion>2.1</maxVersion>
-  <detail><![CDATA[
-
-== Command ==
-Usage:
-  :rl
-    Add current URL to your read later list at instapaper
-
-  ]]></detail>
-</VimperatorPlugin>;
-//}}}
-//
-
+var INFO = ["plugin",
+             { name: "instapaper",
+               version: "0.2",
+               href: "https://github.com/petRUShka/instapaper.js",
+               summary: "Add pages to instapaper for later reading",
+               xmlns: "dactyl" },
+             ["author", { email: "petrushkin@yandex.ru" }, "petRUShka"],
+             ["license", { href: "http://opensource.org/licenses/mit-license.php" }, "MIT"],
+             ["project", { name: "Pentadactyl", "min-version": "1.0" }],
+             [
+              "p", {}, "This plugin provides a possibility to add pages and their mobile/print version to instapaper for later reading."
+             ],
+             ["item", {}, ["tags", {}, ":rl"],
+               ["strut"],
+               ["spec", {}, ":rl"],
+               ["description", {},
+                 ["p", {}, "Add current URL to your read later list at instapaper.",]
+               ]
+             ]
+           ];
 (
  function() {
  group.commands.add(['readlater', 'rl', 'instapaper'],
