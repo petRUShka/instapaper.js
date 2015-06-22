@@ -24,7 +24,7 @@ var INFO = ["plugin",
 	 'Add current page to Instapaper',
 	 function (args) {
 		var manager = Components.classes["@mozilla.org/login-manager;1"].getService(Components.interfaces.nsILoginManager);
-		var logins = manager.findLogins({},"http://www.instapaper.com","",null);
+		var logins = manager.findLogins({},"https://www.instapaper.com","",null);
 	 	var url = 'https://www.instapaper.com/api/add';
 		var params = [];
 		var username = logins[0].username || false;
